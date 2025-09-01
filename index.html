@@ -2,12 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Discord Profile</title>
+  <title>My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #1a1a1a; /* in-between dark */
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 10px;
+    }
+
+    .profile-card {
+      background: #242424; /* slightly lighter than page */
+      border-radius: 16px;
+      overflow: hidden;
+      width: 360px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .banner {
+      width: 100%;
+      height: 160px;
+      background: url('https://your-banner-link.com') no-repeat center/cover;
+      position: relative;
+    }
+
+    .pfp {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #242424;
+      background: url('https://your-pfp-link.com') no-repeat center/cover;
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .info {
+      padding: 80px 20px 30px;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .username {
+      font-size: 1rem;
+      color: #b0b0b0;
+    }
+  </style>
 </head>
 <body>
-  <a href="https://discordid.taichikuji.org/?id=1299687509722271775" target="_blank">
-    <img src="https://discord.c99.nl/widget/theme-5/1299687509722271775.png" 
-         style="display:block; margin:0 auto; width:70%;">
-  </a>
+  <div class="profile-card">
+    <div class="banner">
+      <div class="pfp"></div>
+    </div>
+    <div class="info">
+      <div class="name">Your Name</div>
+      <div class="username">@yourusername</div>
+    </div>
+  </div>
 </body>
 </html>
